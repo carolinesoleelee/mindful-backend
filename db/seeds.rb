@@ -32,10 +32,6 @@ e8 = Emotion.create(mood:'Excited')
 e9 = Emotion.create(mood:'Happy')
 e10 = Emotion.create(mood:'Best Day Ever')
 
-te1 = Timesheetemotion.create(timesheet_id: 1, emotion_id: 10)
-te2 = Timesheetemotion.create(timesheet_id: 1, emotion_id: 2)
-te3 = Timesheetemotion.create(timesheet_id: 1, emotion_id: 3)
-
 
 t1 = Timesheet.create(user_id: caroline.id, date:'01-07-2019', text:'Finished alot of work and mom made my favorite fish dish today!',
    food:3, water:3, hours_of_sleep:6, bowel_movement:0, friends:0, family:1 )
@@ -43,3 +39,7 @@ t2 = Timesheet.create(user_id: caroline.id, date:'01-08-2019', text:'Started my 
    food:2, water:4, hours_of_sleep:7, bowel_movement:1, friends:0, family:0)
 t3 = Timesheet.create(user_id: caroline.id, date:'01-09-2019', text:'Did not get to finish the amount of work I wanted to get done.',
    food:3, water:2, hours_of_sleep:6, bowel_movement:1, friends:0, family:1)
+
+   te1 = Timesheetemotion.create(timesheet_id: 1, emotion_id: 10)
+   te2 = Timesheetemotion.create(timesheet_id: 1, emotion_id: 2)
+   te3 = Timesheetemotion.create(timesheet_id: 1, emotion_id: 3)

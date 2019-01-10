@@ -1,4 +1,4 @@
 class Emotion < ApplicationRecord
-  has_many :timesheets
-  has_many :timesheetemotions, through: :timesheets
+  has_many :timesheetemotions
+  has_many :timesheets, through: :timesheetemotions
 end
