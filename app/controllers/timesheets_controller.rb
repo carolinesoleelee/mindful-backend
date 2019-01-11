@@ -9,7 +9,10 @@ class TimesheetsController < ApplicationController
     end
 
     def create
-      render json: Timesheet.create(timesheet_params)
+      @timesheet = Timesheet.create!(timesheet_params)
+      @timesheet.emotions << Emotion.find(params[:emotions])
+
+      render json: @timesheet
     end
 
     def update
@@ -25,7 +28,10 @@ class TimesheetsController < ApplicationController
 
     def timesheet_params
       params.require(:timesheet).permit(:user_id, :date, :text, :food, :water,
-        :hours_of_sleep, :bowel_movement, :friends, :family)
+        :hours_of_sleep, :bowel_movement, :friends, :family, :emotions)
     end
 
+    def emotion_params
+      params.require(:emotion).permit(:id)
+    end
 end
