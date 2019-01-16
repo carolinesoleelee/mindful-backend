@@ -33,13 +33,26 @@ e9 = Emotion.create(mood:'Happy')
 e10 = Emotion.create(mood:'Best Day Ever')
 
 
-t1 = Timesheet.create(user_id: caroline.id, date:'01-07-2019', text:'Finished alot of work and mom made my favorite fish dish today!',
+t1 = Timesheet.create(user_id: caroline.id, date:'2019-01-01', text:'Finished alot of work and mom made my favorite fish dish today!',
    food:3, water:3, hours_of_sleep:6, bowel_movement:0, friends:0, family:1 )
-t2 = Timesheet.create(user_id: caroline.id, date:'01-08-2019', text:'Started my period.',
+t2 = Timesheet.create(user_id: caroline.id, date:'2019-01-02', text:'Started my period.',
    food:2, water:4, hours_of_sleep:7, bowel_movement:1, friends:0, family:0)
-t3 = Timesheet.create(user_id: caroline.id, date:'01-09-2019', text:'Did not get to finish the amount of work I wanted to get done.',
+t3 = Timesheet.create(user_id: caroline.id, date:'2019-01-03', text:'Did not get to finish the amount of work I wanted to get done.',
    food:3, water:2, hours_of_sleep:6, bowel_movement:1, friends:0, family:1)
+t4 = Timesheet.create(user_id: caroline.id, date:'2019-01-05', text:'Work finished.',
+      food:1, water:2, hours_of_sleep:6, bowel_movement:1, friends:0, family:1)
+t5 = Timesheet.create(user_id: caroline.id, date:'2019-01-04', text:'Just worked all day.',
+            food:2, water:2, hours_of_sleep:6, bowel_movement:1, friends:0, family:1)
 
    te1 = Timesheetemotion.create(timesheet_id: 1, emotion_id: 10)
    te2 = Timesheetemotion.create(timesheet_id: 1, emotion_id: 2)
    te3 = Timesheetemotion.create(timesheet_id: 1, emotion_id: 3)
+   te4 = Timesheetemotion.create(timesheet_id: 2, emotion_id: 1)
+   te5 = Timesheetemotion.create(timesheet_id: 2, emotion_id: 2)
+   te6 = Timesheetemotion.create(timesheet_id: 2, emotion_id: 4)
+   te7 = Timesheetemotion.create(timesheet_id: 3, emotion_id: 1)
+   te8 = Timesheetemotion.create(timesheet_id: 3, emotion_id: 2)
+   te9 = Timesheetemotion.create(timesheet_id: 3, emotion_id: 3)
+   te10 = Timesheetemotion.create(timesheet_id: 4, emotion_id: 10)
+   te11 = Timesheetemotion.create(timesheet_id: 5, emotion_id: 6)
+   te12 = Timesheetemotion.create(timesheet_id: 5, emotion_id: 5)

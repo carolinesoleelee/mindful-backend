@@ -11,7 +11,6 @@ class TimesheetsController < ApplicationController
     def create
       @timesheet = Timesheet.create!(timesheet_params)
       @timesheet.emotions << Emotion.find(params[:emotions])
-
       render json: @timesheet
     end
 
